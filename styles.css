@@ -30,7 +30,7 @@
 
 @media only screen and (min-width: 50em) {
   :root {
-    font-size: 18px;
+    font-size: 16px;
     --padding-x: 2em;
   }
 }
@@ -92,14 +92,14 @@ nav {
 .header__title {
   font-size: 2.5rem;
   line-height: 1.3em;
-  margin-bottom: 0.1em;
-  max-width: 8em;
+  margin-bottom: 0.4em;
+  max-width: none;
 }
 
 .header__desc {
   font-size: 1rem;
   margin-bottom: 1.8em;
-  max-width: 20em;
+  max-width: 25em;
 }
 
 @media only screen and (min-width: 50em) {
@@ -206,7 +206,7 @@ nav {
 }
 
 .stats__inner {
-  padding: 4em 0 12em 0;
+  padding: 4em 0 7em 0;
   text-align: center;
 }
 
@@ -291,6 +291,9 @@ nav {
 }
 
 @media only screen and (min-width: 50em) {
+  .stats__inner {
+    padding: 4em 0 12em 0;
+  }
   .stats__container__desc {
     max-width: 30em;
   }
