@@ -25,18 +25,19 @@
   <body>
     <nav>
       <div class="nav__inner inner">
-        <div class="imgContainer">
+        <div class="imgContainer nav__imgContainer">
           <img src="./images/logo.svg" alt="Shortly" />
         </div>
         <div class="nav__links">
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Resources</li>
+          <ul class="nav__group">
+            <li><a class="nav__link">Features</a></li>
+            <li><a class="nav__link">Pricing</a></li>
+            <li><a class="nav__link">Resources</a></li>
           </ul>
-          <ul>
-            <li>Login</li>
-            <li>Sign Up</li>
+          <hr class="nav__hr" />
+          <ul class="nav__group">
+            <li><a class="nav__link">Login</a></li>
+            <li><button class="btn">Sign Up</button></li>
           </ul>
         </div>
         <div class="nav__burger">
@@ -63,11 +64,15 @@
     </header>
     <section class="shorten">
       <div class="shorten__inner inner">
-        <input
-          class="shorten__input"
-          type="text"
-          placeholder=" Shorten a link here..."
-        />
+        <div class="shorten__inputContainer">
+          <input
+            class="shorten__input shorten__input--error"
+            type="text"
+            placeholder=" Shorten a link here..."
+          />
+          <em class="shorten__error">Error</em>
+        </div>
+
         <button class="btn btn--squared">Shorten It!</button>
       </div>
     </section>
@@ -119,8 +124,10 @@
       </div>
     </section>
     <section class="boost">
-      <h2 class="boost__title">Boost your links today</h2>
-      <button class="btn" class="btn--boost">Get Started</button>
+      <div class="boost__inner inner">
+        <h2 class="boost__title">Boost your links today</h2>
+        <button class="btn" class="btn--boost">Get Started</button>
+      </div>
     </section>
     <footer>
       <div class="footer__inner inner">
@@ -147,18 +154,10 @@
           <li><a href="#" class="footer__link">Contact</a></li>
         </ul>
         <ul ul class="footer__logos">
-          <li class="imgContainer">
-            <img src="./images/icon-facebook.svg" alt="Facebook" />
-          </li>
-          <li class="imgContainer">
-            <img src="./images/icon-twitter.svg" alt="Twitter" />
-          </li>
-          <li class="imgContainer">
-            <img src="./images/icon-pinterest.svg" alt="Pinterest" />
-          </li>
-          <li class="imgContainer">
-            <img src="./images/icon-instagram.svg" alt="Instagram" />
-          </li>
+          <li class="imgContainer footer__iconContainer"></li>
+          <li class="imgContainer footer__iconContainer"></li>
+          <li class="imgContainer footer__iconContainer"></li>
+          <li class="imgContainer footer__iconContainer"></li>
         </ul>
       </div>
     </footer>
