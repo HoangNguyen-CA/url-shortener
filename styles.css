@@ -290,6 +290,7 @@ nav {
   border: none;
   border: 2px solid transparent;
   height: 100%;
+  outline: none;
 }
 .shorten__error {
   margin-top: 0.4em;
@@ -300,6 +301,35 @@ nav {
 .shorten__input--error {
   color: var(--clr-error);
   border: 2px solid var(--clr-error);
+}
+
+.shorten__input::placeholder {
+  opacity: 0.8; /* Firefox */
+}
+
+.shorten__input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0.8;
+}
+
+.shorten__input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  opacity: 0.8;
+}
+
+.shorten__input--error::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--clr-error);
+}
+
+.shorten__input--error:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--clr-error);
+}
+
+.shorten__input--error::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--clr-error);
 }
 
 @media only screen and (min-width: 50em) {
@@ -713,6 +743,14 @@ footer {
   font-size: 1rem;
 }
 
+.btn--active {
+  background-color: var(--clr-secondary);
+}
+
+.btn--active:hover {
+  background-color: var(--clr-secondary);
+}
+
 /* general */
 
 h1,
@@ -730,6 +768,14 @@ h3 {
 body {
   overflow-x: hidden;
   max-width: 100vw;
+}
+
+.body--loading {
+  cursor: progress;
+}
+
+.body--loading * {
+  cursor: progress;
 }
 
 header,

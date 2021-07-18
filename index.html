@@ -28,7 +28,7 @@
         <div class="imgContainer nav__imgContainer">
           <img src="./images/logo.svg" alt="Shortly" />
         </div>
-        <div class="nav__links">
+        <div class="nav__links" id="navLinks">
           <ul class="nav__group">
             <li><a class="nav__link">Features</a></li>
             <li><a class="nav__link">Pricing</a></li>
@@ -40,7 +40,7 @@
             <li><button class="btn">Sign Up</button></li>
           </ul>
         </div>
-        <div class="nav__burger">
+        <div class="nav__burger" id="burger">
           <div></div>
           <div></div>
           <div></div>
@@ -63,18 +63,20 @@
       </div>
     </header>
     <section class="shorten">
-      <div class="shorten__inner inner">
+      <form class="shorten__inner inner">
         <div class="shorten__inputContainer">
           <input
-            class="shorten__input shorten__input--error"
+            class="shorten__input"
             type="text"
             id="shortenInput"
             placeholder=" Shorten a link here..."
           />
-          <em class="shorten__error">Error</em>
+          <em class="shorten__error" id="shortenError"></em>
         </div>
-        <button class="btn btn--squared" id="shortenSubmit">Shorten It!</button>
-      </div>
+        <button class="btn btn--squared" id="shortenSubmit" type="submit">
+          Shorten It!
+        </button>
+      </form>
     </section>
     <section class="urlList">
       <ul class="urlList__inner inner" id="urlList">
