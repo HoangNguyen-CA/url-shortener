@@ -43,6 +43,9 @@
 
 /* nav */
 
+header{
+  overflow: hidden;
+}
 nav {
   height: var(--nav-height);
   position: relative;
@@ -392,7 +395,7 @@ nav {
   margin: 1em 0;
   flex-grow: 0;
   height: 3px;
-  width: 150%;
+  width: 110%;
   border: none;
   background-color: var(--neutral-200);
 }
